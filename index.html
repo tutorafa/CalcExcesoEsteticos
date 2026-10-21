@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "z0pu64mjng");
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#E4002B">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="MULTIMAP">
+<meta name="apple-mobile-web-app-title" content="Exceso estéticos">
 <meta name="description" content="Cálculo de importes de siniestro y asistencia MULTIMAP">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
-<meta property="og:site_name" content="MULTIMAP">
+<meta property="og:site_name" content="Exceso estéticos">
 <meta property="og:title" content="Cálculo importe MULTIMAP">
 <meta property="og:description" content="Calcula los importes de un siniestro y de la asistencia MULTIMAP.">
 <meta property="og:url" content="__SITE_URL__">
@@ -91,16 +84,19 @@ footer{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:8px 12px
 dialog{border:0;padding:0;border-radius:16px;width:min(92vw,440px);max-height:85vh;overflow:auto;color:var(--navy);background:#fff}
 dialog::backdrop{background:rgba(10,15,40,.55)}
 .mh{background:var(--red);color:#fff;padding:14px 48px 14px 18px;position:relative;font-size:1.1rem;font-weight:700}
-.mh button{position:absolute;right:8px;top:8px;width:34px;height:34px;border:0;background:none;color:#fff;font-size:1.6rem;cursor:pointer;line-height:1}
+.mh button{position:absolute;right:2px;top:2px;width:46px;height:46px;-webkit-tap-highlight-color:transparent;border:0;background:none;color:#fff;font-size:1.6rem;cursor:pointer;line-height:1}
 .mb{padding:16px 18px 18px;font-size:.92rem}
+.mh button:focus,.mh button:focus-visible{outline:none;box-shadow:none}
+.note{color:#444}
+#dlgT{display:inline-flex;align-items:center;gap:8px}
 .os{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;margin:0 0 12px}
 .os svg{width:26px;height:26px}
 .os b{display:block}
 .mb hr{border:0;border-top:1px solid #e3e5ec;margin:14px 0}
 .about{text-align:right}.about .lnk{justify-self:end}
 #legalBtn{color:#8a5a2b}
-.about .lnk{font-size:.78rem;font-style:italic;color:#444}
-#aboutTxt{font-size:.78rem;font-style:italic;color:#444;margin-top:2px}
+.about .lnk{font-size:.78rem;font-style:italic;color:#666;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+#aboutTxt{font-size:.78rem;font-style:italic;color:#666;margin-top:2px}
 </style>
 </head>
 <body>
@@ -136,12 +132,12 @@ dialog::backdrop{background:rgba(10,15,40,.55)}
 <div id="legal" role="note" hidden><p>Herramienta de consulta con fines informativos, de uso exclusivo para reparadores colaboradores. No recoge datos ni interactúa con sistemas corporativos. No sustituye los canales o herramientas oficiales. De uso voluntario.</p><p>Ante cualquier duda consulta siempre con el departamento técnico</p></div>
 </footer>
 </main>
-<dialog id="dlg" aria-labelledby="dlgT"><div class="mh"><span id="dlgT">📱 Instalar la app</span><button type="button" id="dlgX" aria-label="Cerrar">×</button></div>
+<dialog id="dlg" aria-labelledby="dlgT"><div class="mh"><span id="dlgT"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Instalar la app</span><button type="button" id="dlgX" aria-label="Cerrar">×</button></div>
 <div class="mb">
 <div class="os"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9a6 6 0 0 1 12 0z" fill="#3DDC84"/><rect x="6" y="9.6" width="12" height="9" rx="1.5" fill="#3DDC84"/><rect x="3" y="9.6" width="2.2" height="6" rx="1.1" fill="#3DDC84"/><rect x="18.8" y="9.6" width="2.2" height="6" rx="1.1" fill="#3DDC84"/><rect x="8.6" y="17" width="2.2" height="4.6" rx="1.1" fill="#3DDC84"/><rect x="13.2" y="17" width="2.2" height="4.6" rx="1.1" fill="#3DDC84"/><path d="M7.6 3.2l1.2 2.2M16.4 3.2l-1.2 2.2" stroke="#3DDC84" stroke-width="1" stroke-linecap="round"/><circle cx="9.5" cy="6.6" r=".75" fill="#fff"/><circle cx="14.5" cy="6.6" r=".75" fill="#fff"/></svg><div><b>Android (Chrome)</b>Abre la URL → menú ⋮ → «Añadir a pantalla de inicio»</div></div>
 <div class="os"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f4f6"/><stop offset="1" stop-color="#a3a3a9"/></linearGradient></defs><path fill="url(#sv)" stroke="#8e8e93" stroke-width=".4" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><div><b>iOS (Safari)</b>Abre la URL → botón compartir □↑ → «Añadir a pantalla de inicio»</div></div>
 <div class="os"><span aria-hidden="true" style="font-size:1.3rem">🖥️</span><div><b>PC (Chrome / Edge)</b>Abre la URL → icono ⊕ en la barra de direcciones → «Instalar»</div></div>
-<hr><div>💡 La app funciona sin conexión después de la primera carga</div><hr>
+<hr><div class="note">💡 La app funciona sin conexión después de la primera carga</div><hr>
 <div class="about"><button type="button" class="lnk" id="aboutBtn" aria-expanded="false" aria-controls="aboutTxt">Acerca de</button><div id="aboutTxt" hidden>Versión: 26.10<br>Desarrollo: Rafael R.</div></div>
 </div></dialog>
 <script>
